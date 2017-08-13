@@ -67,6 +67,7 @@
 
 	.inline-div {
     display:inline-block;
+    float:left;
 	}
 
 /* Box Model */
