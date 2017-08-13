@@ -53,6 +53,20 @@
     border-radius: 50%;
 	}
 
+	#wrap{
+    width:100%;
+    margin:0 auto;
+	}
+	
+	.box{
+	    float:left;
+	    width:48%;
+	    height:200px;
+	    background:orange;
+	    border:2px solid red;
+	    margin:0 auto;
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
