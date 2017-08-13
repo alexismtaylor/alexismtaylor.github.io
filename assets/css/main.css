@@ -71,9 +71,9 @@
     display:inline-block;
 	}
 
-	.inline-txtarea {
+	.inline-block {
     resize: none;
-    border : 2px solid red;
+    border : 2px solid blacks;
     height:125px;
 	}
 
