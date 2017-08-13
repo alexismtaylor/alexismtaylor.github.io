@@ -2319,6 +2319,8 @@
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
+			display:table; 
+			margin:0 auto;
 		}
 
 			ul.alt li {
