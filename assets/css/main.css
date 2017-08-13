@@ -221,6 +221,10 @@
 
 	@media screen and (max-width: 480px) {
 
+		#divSize{
+				height: 600px;
+			}
+
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 112.5%;
@@ -1150,6 +1154,10 @@
 
 	@media screen and (max-width: 736px) {
 
+		#divSize{
+				height: 600px;
+			}
+
 		.row > * {
 			padding: 0 0 0 1.25em;
 		}
@@ -1364,6 +1372,10 @@
 	}
 
 	@media screen and (max-width: 480px) {
+
+		#divSize{
+				height: 600px;
+			}
 
 		.row > * {
 			padding: 0 0 0 1.25em;
@@ -1659,6 +1671,10 @@
 				font-size: 12pt;
 			}
 
+			#divSize{
+				height: 600px;
+			}
+
 		}
 
 	a {
@@ -1808,6 +1824,10 @@
 				max-width: 90%;
 			}
 
+			#divSize{
+				height: 600px;
+			}
+
 		}
 
 /* Section/Article */
@@ -1873,6 +1893,10 @@
 
 			section.wrapper article, article.wrapper article {
 				text-align: center;
+			}
+
+			#divSize{
+				height: 600px;
 			}
 
 		}
@@ -1949,6 +1973,10 @@
 
 			.flex.flex-2 br {
 				display: none;
+			}
+
+			#divSize{
+				height: 600px;
 			}
 
 		}
@@ -2426,6 +2454,10 @@
 
 			@media screen and (max-width: 480px) {
 
+				#divSize{
+				height: 600px;
+			}
+
 				ul.actions {
 					margin: 0 0 2em 0;
 				}
@@ -2720,6 +2752,10 @@
 				width: 100%;
 			}
 
+			#divSize{
+				height: 600px;
+			}
+
 		}
 
 /* Header */
@@ -2819,6 +2855,10 @@
 					padding: 0 0.5em;
 				}
 
+				#divSize{
+				height: 600px;
+			}
+
 			}
 
 	@media screen and (max-width: 980px) {
@@ -2835,6 +2875,10 @@
 			top: .5em;
 		}
 
+		#divSize{
+				height: 600px;
+			}
+
 	}
 
 	@media screen and (max-width: 480px) {
@@ -2842,6 +2886,10 @@
 		#header {
 			font-size: .9em;
 		}
+
+		#divSize{
+				height: 600px;
+			}
 
 	}
 
@@ -3036,6 +3084,10 @@
 				background-attachment: scroll;
 			}
 
+			#divSize{
+				height: 600px;
+			}
+
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -3098,6 +3150,10 @@
 
 		@media screen and (max-width: 736px) {
 
+			#divSize{
+				height: 600px;
+			}
+
 			#banner {
 				padding: 4em 0 3em 0;
 			}
@@ -3135,6 +3191,10 @@
 
 			#banner h1 {
 				font-size: 1.5em;
+			}
+
+			#divSize{
+				height: 600px;
 			}
 
 		}
@@ -3186,6 +3246,10 @@
 
 			#footer {
 				padding: 3em 0;
+			}
+
+			#divSize{
+				height: 600px;
 			}
 
 		}
