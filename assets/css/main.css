@@ -2516,6 +2516,7 @@
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
+		table-layout:fixed;
 	}
 
 		table tbody tr {
@@ -2530,6 +2531,7 @@
 
 		table td {
 			padding: 0.75em 0.75em;
+			word-wrap:break-word;
 		}
 
 		table th {
