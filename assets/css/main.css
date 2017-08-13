@@ -58,10 +58,8 @@
     margin:0 auto;
 	}
 	
-	.box{
+	.box2{
 	    float:left;
-	    width:48%;
-	    height:200px;
 	    background:orange;
 	    border:2px solid red;
 	    margin:0 auto;
@@ -69,12 +67,6 @@
 
 	.inline-div {
     display:inline-block;
-	}
-
-	.inline-block {
-    resize: none;
-    border : 2px solid blacks;
-    height:125px;
 	}
 
 /* Box Model */
