@@ -2328,18 +2328,20 @@
 				border-top: solid 1px #dbdbdb;
 				padding: 0.5em 0;
 				float: left;
+				width:10em;
 			}
 
 				ul.alt li:first-child {
 					border-top: 0;
 					padding-top: 0;
 					float: left;
-
+					width: 10em;
 				}
 
 			ul.alt.dark li {
 				border-top: solid 1px rgba(0, 0, 0, 0.25);
 				float: left;
+				width: 10em;
 			}
 
 		ul.icons {
