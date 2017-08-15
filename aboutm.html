@@ -52,6 +52,89 @@
     			height: auto;
     			width: auto\9; /* ie8 */
 			}
+
+						.box {
+			  width: 40%;
+			  margin: 0 auto;
+			  background: rgba(255,255,255,0.2);
+			  padding: 35px;
+			  border: 2px solid #fff;
+			  border-radius: 20px/50px;
+			  background-clip: padding-box;
+			  text-align: center;
+			}
+
+			.button {
+			  font-size: 1em;
+			  padding: 10px;
+			  color: #fff;
+			  border: 2px solid #06D85F;
+			  border-radius: 20px/50px;
+			  text-decoration: none;
+			  cursor: pointer;
+			  transition: all 0.3s ease-out;
+			}
+			.button:hover {
+			  background: #06D85F;
+			}
+
+			.overlay {
+			  position: fixed;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  background: rgba(0, 0, 0, 0.7);
+			  transition: opacity 500ms;
+			  visibility: hidden;
+			  opacity: 0;
+			}
+			.overlay:target {
+			  visibility: visible;
+			  opacity: 1;
+			}
+
+			.popup {
+			  margin: 70px auto;
+			  padding: 20px;
+			  background: #fff;
+			  border-radius: 5px;
+			  width: 30%;
+			  position: relative;
+			  transition: all 5s ease-in-out;
+			}
+
+			.popup h2 {
+			  margin-top: 0;
+			  color: #333;
+			  font-family: Tahoma, Arial, sans-serif;
+			}
+			.popup .close {
+			  position: absolute;
+			  top: 20px;
+			  right: 30px;
+			  transition: all 200ms;
+			  font-size: 30px;
+			  font-weight: bold;
+			  text-decoration: none;
+			  color: #333;
+			}
+			.popup .close:hover {
+			  color: #06D85F;
+			}
+			.popup .content {
+			  max-height: 30%;
+			  overflow: auto;
+			}
+
+			@media screen and (max-width: 700px){
+			  .box{
+			    width: 70%;
+			  }
+			  .popup{
+			    width: 70%;
+			  }
+			}
 		</style>
 	</head>
 	<body class="subpage">
@@ -121,19 +204,109 @@
 			<div class="tempbrown">
 				<h3 align="center" style="color:white;">Skills</h3>
 				<ul class="alt" align="center">
-					<li>Visual Studio - Proficient</li>
-					<li>ASP.NET MVC Framework - Working</li>
-					<li>Android Studio- Proficient</li>
-					<li>Xamarin - Proficient</li>
-					<li>Object Oriented Design - Proficient</li>
-					<li>UNIX - Proficient</li>
-					<li>Agile Development - Working</li>
-					<li>Web API - Working</li>
-					<li>MySQL/MySQL Workbench - Working</li>
-					<li>Eclipse - Working</li>
+					<li><a href="#popup1">Visual Studio - Proficient</a></li>
+					<li><a href="#popup2">ASP.NET MVC Framework - Working</a></li>
+					<li><a href="#popup3">Android Studio- Proficient</a></li>
+					<li><a href="#popup4">Xamarin - Proficient</a></li>
+					<li><a href="#popup5">Object Oriented Design - Proficient</a></li>
+					<li><a href="#popup6">Unix - Proficient</a></li>
+					<li><a href="#popup7">Agile Development - Working</a></li>
+					<li><a href="#popup8">Web API - Working</a></li>
+					<li><a href="#popup9">MySQL/MySQL Workbench - Working</a></li>
+					<li><a href="#popup10">Data Structures and Algorithms - Working</a></li>
+					<li><a href="#popup11">Git - Working</a></li>
 				</ul>
 			</div>
 		</div>
+
+			<div id="popup1" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use Visual Studio while working at my current internship at VR Systems. Only having used it a few times before, I learned as I went and gained a lot of experience with many different features including the package manager, components, and using it to build applications among others.
+			</div>
+		</div>
+	</div>
+	<div id="popup2" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use the ASP.NET MVC Framework while working at my current internship at VR Systems. I specifically used the MVC Framework to build a mobile application as well as a web application with a backend database that required many different models and controllers.
+			</div>
+		</div>
+	</div>
+	<div id="popup3" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use Android Studio while take an Android Programming course at my university. Some of the features I learned to use were the debugger, the Android Device Manager, the SDK Manager, and the Device Monitor among others.
+			</div>
+		</div>
+	</div>
+	<div id="popup4" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use Xamarin while working at my current internship at VR Systems. I used Xamarin as well as Xamarin forms to build a cross-platform application on Visual Studio. I had never used Xamarin, or C#, before this and learned as I went. Some of the Xamarin/Xamarin Forms features I used included creating custom renderers for each platform, using native external apps launched from my app, and XAML for design among other features.
+			</div>
+		</div>
+	</div>
+	<div id="popup5" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use Object Oriented Design while taking an Object Oriented Programming course in C++. In this course I wrote several programs utilizing many different principles of OOP including the use of header files, inheritance and composition, and protection levels among others. I also used OOP in a Java course as well as a Python Course.
+			</div>
+		</div>
+	</div>
+	<div id="popup6" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use Unix and Unix commands while taking an introductory unix course. In this course I learned many of the basic commands as well as how to use text editors, and some of their commands, like nano/pico, vi/vim, and emacs. I also learned the basics of bash shell scripting.
+			</div>
+		</div>
+	</div>
+	<div id="popup7" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned about Agile development while working at my current internship at VR Systems. I was a part of a team of interns that conducted weekly or bi-monthly sprints using Jira where each sprint would build upon the previous.
+			</div>
+		</div>
+	</div>
+	<div id="popup8" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned about Web APIs in a few different ways. I used a few different APIs in an Android course such as various google APIs and the Dark Skies API for a weather app. I also used Web APIs while working at my current internship at VR Systems. I added to an existing Web API that was created by the previous intern group written in C#. As well as gaining experience calling this API in Javascript with jQuery and in C# with HTTP Clients.
+			</div>
+		</div>
+	</div>
+	<div id="popup9" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use MySQL and MySQL workbench while working at my current internship at VR Systems. Having not taken a databases course yet, I learned as I went and used MySQL statements in C# to access a backend database as well as maintained that database using MySQL workbench.
+			</div>
+		</div>
+	</div>
+	<div id="popup10" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned about Data Structures and Algorithms in the course taught at my university in C++. In this course I learned about time complexities in Big O notation for insertions, deletions, and accesses for different data structures as well as time complexities for many popular searching and sorting algorithms. In addition to this, I worked on projects that built many different data structures without using the built-in libraries. I also learned how to use different data structures in Java, Python, and C#.
+			</div>
+		</div>
+	</div>
+	<div id="popup11" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				I learned how to use Git initially through taking an Android and Python course at my university while doing group projects. I learned Git slightly more in depth while working at my current internship at VR Systems. I learned many of the basic commands as well as the structure and flow of branches.
+			</div>
+		</div>
+	</div>
 
 			<section id="banner" style="background:#4B4B5D">
 			<div class="inner">
