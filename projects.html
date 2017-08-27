@@ -12,77 +12,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
-	<style>
-	        .slider-holder
-        {
-            width: 800px;
-            height: 400px;
-            background-color: yellow;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            text-align: center;
-            overflow: hidden;
-        }
-        
-        .image-holder
-        {
-            width: 2400px;
-            background-color: red;
-            height: 400px;
-            clear: both;
-            position: relative;
-            
-            -webkit-transition: left 2s;
-            -moz-transition: left 2s;
-            -o-transition: left 2s;
-            transition: left 2s;
-        }
-        
-        .slider-image
-        {
-            float: left;
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-        }
-        
-        #slider-image-1:target ~ .image-holder
-        {
-            left: 0px;
-        }
-        
-        #slider-image-2:target ~ .image-holder
-        {
-            left: -800px;
-        }
-        
-        #slider-image-3:target ~ .image-holder
-        {
-            left: -1600px;
-        }
-
-        #slider-image-4:target ~ .image-holder
-        {
-        	left: -2400;
-        }
-        
-        .button-holder
-        {
-            position: relative;
-            top: -20px;
-        }
-        
-        .slider-change
-        {
-            display: inline-block;
-            height: 10px;
-            width: 10px;
-            border-radius: 5px;
-            background-color: brown;
-        }
-
-	</style>
+		<style>
+			.floated_img
+			{
+			    float: left;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -105,24 +40,26 @@
 					<header class="align-center">
 						<h2>Projects</h2>
 					</header>
-					<div class="slider-holder">
-				        <span id="slider-image-1"></span>
-				        <span id="slider-image-2"></span>
-				        <span id="slider-image-3"></span>
-				        <span id="slider-image-4"></span>
-				        <div class="image-holder">
-				            <img src="inprog.jpg" class="slider-image" />
-				            <img src="namegen.png" class="slider-image" />
-				            <img src="weatherwear.jpg" class="slider-image" />
-				            <img src="ingredient.jpg" class="slider-image" />
-				        </div>
-				        <div class="button-holder">
-				            <a href="#slider-image-1" class="slider-change"></a>
-				            <a href="#slider-image-2" class="slider-change"></a>
-				            <a href="#slider-image-3" class="slider-change"></a>
-				            <a href="#slider-image-4" class="slider-change"></a>
-				        </div>
-				    </div>
+				</div>
+				<div class="floated_img">
+					<a href="inprog.jpg" data-lightbox="image-1" data-title="CircFit" title="Click to enlarge">
+						<img src="inprog.jpg">
+					</a>
+				</div>
+				<div class="floated_img">
+					<a href="namegen.png" data-lightbox="image-1" data-title="UsernameGen" title="Click to enlarge">
+						<img src="namegen.png">
+					</a>
+				</div>
+				<div class="floated_img">
+					<a href="weatherwear.jpg" data-lightbox="image-1" data-title="WeatherWear" title="Click to enlarge">
+						<img src="weatherwear.jpg">
+					</a>
+				</div>
+				<div class="floated_img">
+					<a href="ingredient.jpg" data-lightbox="image-1" data-title="Recipe" title="Click to enlarge">
+						<img src="ingredient.jpg">
+					</a>
 				</div>
 			</section>
 
