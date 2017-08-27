@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<style>
 			.floated_img
 			{
@@ -40,22 +41,35 @@
 					<header class="align-center">
 						<h2>Projects</h2>
 					</header>
-					<div class="floated_img">
-						<a href="inprog.jpg" data-lightbox="image-1" data-title="CircFit" title="Click to enlarge">
-							<img src="inprog.jpg">
-						</a>
-						<a href="namegen.png" data-lightbox="image-1" data-title="UsernameGen" title="Click to enlarge">
-							<img src="namegen.png">
-						</a>
+					<div class="w3-content w3-display-container">
+					  <img class="mySlides" src="inprog.jpg" style="width:100%">
+					  <img class="mySlides" src="namegen.png" style="width:100%">
+					  <img class="mySlides" src="weatherwear.jpg" style="width:100%">
+					  <img class="mySlides" src="ingredient.jpg" style="width:100%">
+					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 					</div>
-					<div class="floated_img">
-						<a href="weatherwear.jpg" data-lightbox="image-1" data-title="WeatherWear" title="Click to enlarge">
-							<img src="weatherwear.jpg">
-						</a>
-						<a href="ingredient.jpg" data-lightbox="image-1" data-title="Recipe" title="Click to enlarge">
-							<img src="ingredient.jpg">
-						</a>
-					</div>
+
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  if (n > x.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+						     x[i].style.display = "none";  
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						}
+					</script>
+
 				</div>
 			</section>
 
